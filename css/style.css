@@ -1,0 +1,691 @@
+body {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/***********************************************************************************************************************************
+Style-PAGE-ACCUEIL
+************************************************************************************************************************************/
+
+
+/********* NAVBAR *************/
+
+/* appliquer un style pour l'afficher ! */ 
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    margin-top: 0;
+} 
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    /* Espacement entre les liens */
+    margin-right: 20px;
+    /* Espacement entre la liste et le bord droit */
+}
+
+/* Réinitialise tout espacement inutile par défaut */
+.nav-item {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ajustement de la taille ou des marges */
+.navbar-nav {
+    padding-right: 80px;
+    /* Assure un léger espace entre les liens et le bord */
+}
+
+
+.titre-1 {
+    font-family: 'Climate Crisis', sans-serif;
+    font-weight: 900;
+    font-size: 120px;
+    line-height: 216px;
+    letter-spacing: 5%;
+    margin: 0;
+    color: #ffffff;
+    position: absolute;
+    top: 300px;
+    left: 50px;
+}
+
+.titre-2 {
+    font-family: 'Gasoek One', sans-serif;
+    font-weight: 300;
+    font-size: 100px;
+    line-height: 120px;
+    letter-spacing: 5%;
+    margin: 0;
+    color: #ffffff;
+    position: absolute;
+    top: 500px;
+    left: 50px;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    padding-top: 30px;
+    position: relative;
+    background-image: url('../img/header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+header * {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+
+.nawak h1 {
+    text-align: right;
+    margin-top: 0;
+    font-family: 'Climate Crisis', sans-serif;
+    font-size: 90px;
+    color: black;
+}
+
+.nawak h2 {
+    text-align: right;
+    font-family: 'Gasoek One', sans-serif;
+    font-size: 100px;
+    color: black;
+    font-weight: 300;
+    margin-top: 1px;
+    letter-spacing: 5%;
+}
+
+.nawak p {
+    font-weight: bold;
+}
+
+.titre-milieu {
+    font-family: 'Cinzel';
+    font-weight: bolder;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+.paragraphe p {
+    margin-top: 30px;
+    font-family: 'Commissioner';
+    font-size: 25px;
+    text-align: justify;
+    line-height: 1;
+    color: #000;
+    font-weight: normal;
+}
+.paragraphe {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.video-icon {
+    width: 40px;
+    height: 60px;
+    object-fit: contain;
+
+}
+
+.audio-icon {
+    width: 40px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.stylo-icon {
+    width: 30px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 60px;
+}
+
+.icon-item {
+    text-align: center;
+}
+
+
+
+.image-container {
+    position: relative;
+    width: 80%;
+    max-width: 10000px;
+    height: 400px;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+/* Image avec bord arrondi et centrée */
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+
+}
+
+.text-overlay {
+    margin-top: -330px;
+    text-align: right;
+    margin-right: 100px;
+}
+
+.text-overlay h2 {
+    font-size: 60px;
+    color: #ffffff;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.text-overlay h3 {
+    font-size: 80px;
+    color: #F7FC04; 
+    font-family: 'Climate Crisis', sans-serif;
+}
+
+.title-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+
+/* Premier titre INTERVIEW */
+.title {
+    position: absolute;
+    font-family: 'Climate Crisis', sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Pour un alignement parfait */
+    color: #f7fc04;
+    font-size: 150px;
+    z-index: 1;
+    /* Place le premier titre au-dessus du second */
+    text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.9), -4px -4px 10px rgba(255, 255, 255, 0.9);
+    /* Bordure blanche autour des lettres */
+    padding: 10px;
+    letter-spacing: 10%;
+}
+
+/* Deuxième titre superposé INTERVIEW */
+.overlay-title {
+    position: absolute;
+    font-family: 'Climate Crisis', sans-serif;
+    top: 70%;
+    /* Décale le deuxième titre un peu plus bas */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Pour un alignement parfait */
+    color: #f7fc04;
+    font-size: 150px;
+    z-index: 2;
+    /* Place le deuxième titre en dessous du premier */
+    text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.9), -4px -4px 10px rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    position: absolute;
+    letter-spacing: 10%;
+}
+
+
+
+/* fausse img qui remplace lavidéo pour le moment */
+.video {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    padding: 100px;
+}
+
+
+/* partie doubles paragraphes => les titres */    
+.container-titres {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 20px;
+}
+
+
+.titre6,
+.titre7 {
+    font-family: 'Cinzel';
+    font-weight: bolder;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+/* Contenue pour les paragraphes */
+.container-paragraphes {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+/* Styles pour les paragraphes */
+.paragraphe1,
+.paragraphe2 {
+    font-family: 'Commissioner', sans-serif;
+    font-size: 12px;
+    text-align: justify;
+    color: rgb(0, 0, 0);
+    width: 45%;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+
+/* partie PHOTO */
+.image-container1 {
+    position: relative;
+    width: 80%;
+    max-width: 10000px;
+    height: 400px;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+/* Image avec bord arrondi et centrée */
+.image1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+
+.text-overlay1 {
+    margin-top: -200px;
+    text-align: center;
+}
+
+.text-overlay1 h2 {
+    font-size: 100px;
+    color: #ffffff;
+    margin: 0;
+    position: absolute;
+    font-family: 'Climate Crisis', sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Pour un alignement parfait */
+    color: #ffffff;
+    font-size: 150px;
+    padding: 10px;
+    letter-spacing: 10%;
+}
+
+
+.play-icon {
+    width: 400px;
+    height: 100px;
+    object-fit: contain;
+}
+
+
+/* PARTIE TITRE PODCAST + L'ICON */
+
+.title1{
+    position: absolute;
+    font-size: 100px;
+    font-family: 'Climate Crisis', sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrage parfait des titres */
+    color: rgba(0, 0, 0, 1);
+    z-index: 1; /* Assure que ce titre est au-dessus */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    letter-spacing: 10%;
+    margin-top: 0;
+    margin-left: 0;
+    white-space: nowrap; 
+}
+
+.title9{
+    position: absolute;
+    font-size:100px;
+    font-family: 'Climate Crisis', sans-serif;
+    top: 55%;
+    left: 52%;
+    transform: translate(-50%, -50%); /* Centrage parfait des titres */
+    color:rgba(33, 33, 33, 0.72); 
+    z-index: 2; /* Assure que ce titre est en dessous */
+    padding: 10px;
+    letter-spacing: 10%;
+    margin-top: 0;
+    margin-left: 0;
+    white-space: nowrap; 
+}
+
+.title-container1 {
+    position: relative; 
+    margin-right: 300px; 
+    height: 300px; 
+}
+
+.radio { 
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px; 
+  }
+  
+  .pod{
+    width: 80%; 
+    max-width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    object-position: center; 
+    padding-left: 200px;
+  }
+
+  .play-icon { 
+    width: 60px; 
+    height: 60px; 
+  }
+
+  
+
+/*********FOOTER*********/
+.art1footer {
+    background-color: black;
+    width: 100%;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .adressef {
+    font-size: 20px;
+    font-family: 'Wireframing';
+    margin-left: 30px;
+  }
+  
+  
+  .nawak-section {
+    text-align: center;
+    margin-right: 30px;
+  }
+
+
+  .nawak-title {
+    font-family: 'Climate Crisis', sans-serif;
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .logos {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logos img {
+    width: auto;
+    height: 50px;
+  }
+
+
+/****************************************************CAROUSSEL**************************************************************************/
+.instagram-carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    gap: 20px; /* Espacement entre les carrousels */
+}
+
+.instagram-frame {
+    position: relative;
+    width: 900px; /* Largeur fixe pour simuler un téléphone */
+    height: 600px; /* Hauteur fixe */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.instagram-frame-border {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 2px solid #fff;
+    border-radius: 18px;
+    z-index: 2;
+}
+
+.instagram-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #e66465, #9198e5);
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.instagram-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider__wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 600%; /* 6 images */
+    height: 100%;
+}
+
+.slider__item {
+    width: calc(100% / 6);
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__item img {
+    width: 100%; /* Largeur pleine dans le cadre */
+    height: 100%; /* Hauteur pleine */
+    object-fit: cover;
+}
+
+.slider__nav {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+}
+
+.slider__nav-item {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.slider__nav-item.active {
+    background-color: white;
+}
+
+.espace {
+    height: 50px; 
+  }
+
+
+/********************************************************** PAGE ARTICLES *************************************************************************/ 
+
+nav.navbar {
+    position: absolute; /* Positionner la navbar par rapport au parent */
+    top: 0; /* Fixer la navbar en haut */
+    left: 0;
+    width: 100%; /* Elle couvre toute la largeur */
+    z-index: 10; /* S'assurer qu'elle est au-dessus de l'image */
+    
+}
+  
+
+  img {
+      width: 100%;
+      height: 100px;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      
+  }
+  
+  .text-overlay {
+      position: absolute;
+      font-family: 'Climate Crisis', sans-serif;
+      top: 145%;
+      margin-left: 499px;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 135px;
+      
+  }
+  
+  .text-overlay2 {
+      position: absolute;
+      font-family: 'Climate Crisis', sans-serif;
+      top: 101%;
+      margin-left: 499px;
+      transform: translate(-50%, -50%);
+      color: black;
+      font-size: 133px;
+      
+  }
+  
+  h3 {
+      font-family: Climate Crisis;
+      text-align: center;
+      font-size: 50px;
+      color: black;
+      margin-top: 180px;
+      margin-bottom: 50px;
+  }
+  
+  .article-1 {
+    font-family: 'Commissioner', sans-serif;
+    font-size: 16px;
+    color: black;
+    text-align: justify; /* Justifie le texte pour une lecture plus fluide */
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 70px;
+    line-height: 1.6; /* Améliore l'espacement entre les lignes */
+    text-indent: 20px; /* Ajoute un retrait au début de chaque paragraphe */
+}
+
+/* Ajout d'un espacement plus grand entre les paragraphes */
+.article-1 br {
+    margin-bottom: 10px;
+}
+
+  
+  .art1footer {
+    background-color: black;
+    width: 100%;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .adressef {
+    font-size: 20px;
+    font-family: 'Wireframing';
+    margin-left: 30px;
+  }
+  
+  
+  .nawak-section {
+    text-align: center;
+    margin-right: 30px;
+  }
+  
+  .nawak-title {
+    font-family: 'Climate Crisis', sans-serif;
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .logos {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logos img {
+    width: auto;
+    height: 50px;
+  }
+  
+  
+  h4 {
+    font-family: Climate Crisis;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    margin-bottom: 100px;
+}
